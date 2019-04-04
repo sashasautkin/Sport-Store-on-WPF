@@ -1,0 +1,38 @@
+﻿<Window x:Class="Проект.LoginPage"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Проект"
+        mc:Ignorable="d"
+        Title="Login" Height="400" Width="300" FontSize="14" >
+    <Grid Background="#FFFFB900" Margin="0,0,0,0">
+    <Border Background="#2e3137" CornerRadius="20 " Margin=" 20">
+        <StackPanel Margin=" 20">
+
+            <Label Content="Login" Foreground="White" FontSize="25 " HorizontalAlignment="Center"></Label>
+            <Separator></Separator>
+            <Label Content="Username" Foreground="White"></Label>
+            <TextBox Name="txtUsername" Background="#545d6a" Foreground="White" HorizontalContentAlignment="Center" FontSize="18"></TextBox>
+
+            <Label Content="Password" Foreground="White"></Label>
+            <TextBox Name="txtPassword" HorizontalContentAlignment="Center"  Background="#545d6a" Foreground="White" FontSize="18" Cursor="None"/>
+                <Button Click="BtnSubmit_Click" Name="btnSubmit" HorizontalContentAlignment="Center" Margin="55,10" Content="Submit" Background="#545d6a" Foreground="White" FontSize="18" ></Button>
+            <Separator></Separator>
+         
+            <RadioButton Name="Sign_on" IsChecked="true" Content="Sign on" Foreground="White" Background="White" HorizontalAlignment="Center"></RadioButton>
+            <RadioButton Name="Sign_up" Content="Sign up" Foreground="White" Background="White" HorizontalAlignment="Center"> </RadioButton>
+
+            <Separator></Separator>
+        </StackPanel>
+    </Border>
+    </Grid>
+</Window>
